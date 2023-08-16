@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  /* it ensures that padding & border are also included in total height & width of an element. This makes it easier to calculate the size of an element and avoid unexpected overflow or scrollbars. It also makes the element behave more consistently across different browsers. */
+}
+
+html,
+body {
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+/* 1 */
+
+.ry-padding-large {
+  padding: 12px 24px 12px 24px;
+}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+  margin-left: 120px;
+  background-color: #000;
+}
+
+.ry-container {
+  padding: 0px 16px 0px 16px;
+}
+.ry-padding-32 {
+  padding: 32px 0px 32px 0px;
+}
+
+.ry-center {
+  text-align: center;
+  justify-content: center;
+}
+
+.ry-black {
+  background-color: #000;
+  color: #fff;
+}
+#home {
+}
+
+.ry-jumbo {
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .ry-hide-small {
+    display: none;
+  }
+}
+.ry-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* 2 */
+@media only screen and (max-width: 980px) {
+  .ry-content {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.ry-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.ry-text-grey {
+  color: gray;
+}
+
+.ry-padding-64 {
+  padding: 64px 0px 64px 0px;
+}
+
+#about {
+}
+
+/* 2.1 */
+.ry-text-light-grey {
+  color: lightgray;
+}
+
+.ry-line {
+  width: 200px;
+  opacity: 0.5;
+}
+
+/* 2.2 */
+.ry-padding-16 {
+  padding: 8px 16px 8px 16px;
+}
+
+.ry-wide {
+  /* font-stretch: expanded; */
+  letter-spacing: 5px;
+}
+
+.ry-background-white {
+  background-color: #fff;
+}
+
+.ry-background-grey {
+  background-color: darkgray;
+}
+
+/* this will ensure that the images are in a row with zero padding */
+.ry-row-full-container {
+  display: grid;
+}
+.ry-section {
+  display: grid;
+  margin: 16px 0px 16px 0px;
+}
+
+@media only screen and (max-width: 601px) {
+  .ry-quarter {
+    width: 100%;
+  }
+}
+
+.ry-quarter {
+  width: 25%;
+}
+
+.ry-background-light-grey {
+  background-color: lightgray;
+}
+
+.ry-xlarge {
+  font-size: 24px;
+}
+
+.button {
+  display: block;
+}
+
+.ry-download-resume {
+  background-color: lightgray;
+}
+
+.ry-download-resume:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.ry-download-resume-image-styling {
+  height: 50%;
+  width: 35%;
+}
+
+/* 2.3 */
+
+.ry-row-padding {
+  display: grid;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 601px) {
+  .ry-half {
+    width: 100%;
+  }
+}
+.ry-half {
+  width: 50%;
+}
+
+.ry-margin-bottom {
+  margin-bottom: 16px;
+}
+
+.ry-ul {
+}
+
+.ry-opacity {
+  opacity: 0.6;
+}
+
+.ry-background-dark-grey {
+  background-color: darkgray;
+}
+
+.ry-padding-24 {
+  padding: 24px 0px 24px 0px;
+}
+
+.ry-signIn-button {
+  display: block;
+}
+
+.ry-signIn-button:hover {
+  background-color: #000;
+  color: white;
+}
