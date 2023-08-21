@@ -19,29 +19,36 @@
   </head>
 
   <body>
+    <nav class="header-navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Photos"> Photos</a></li>
+        <li><a href="#Contact"> Contact</a></li>
+      </ul>
+    </nav>
+
     <!-- 1. parent of all i.e., Page Content -->
-    <div class="ry-padding-large" id="main">
+    <div class="main-container">
       <!--  child 1 (content-1) Header-->
-      <header class="ry-container ry-padding-32 ry-center ry-black" id="home">
-        <h1 class="ry-jumbo">
-          <span class="hide-small">I'm</span> Roma Yadav.
-        </h1>
-        <p>Marketing Engineer.</p>
+      <header>
+        <h1 class="ry-jumbo">John Doe.</h1>
+        <p class="ry-designation">Photographer and Web Designer.</p>
         <img
-          src="./my-image/Roma-Image_B&W.jpg"
+          src="./my-image/man_smoke (1).jpg"
           alt="girl"
-          class="ry-image"
           width="992"
           height="1108"
+          class="ry-image"
         />
       </header>
 
       <!--  child 2 (content-2) About-->
-      <div class="ry-content ry-justify ry-text-grey ry-padding-64" id="about">
+      <div id="About">
         <!-- 2.1 -->
-        <h2 class="ry-text-light-grey">My Name</h2>
-        <hr class="ry-line" />
-        <p>
+        <h2 class="ry-about-title">My Name</h2>
+        <hr class="ry-horizontal-row" />
+        <p class="ry-about-para">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut optio,
           eum eaque ipsa repellat amet facilis, assumenda praesentium laudantium
           nemo voluptatibus commodi explicabo iusto, ex possimus numquam vero
@@ -51,118 +58,171 @@
         </p>
 
         <!-- 2.2 -->
-        <h3 class="ry-padding-16 ry-text-light-grey">My Skills</h3>
-        <p class="ry-wide">Photography</p>
-        <div class="ry-background-white">
-          <div
-            class="ry-background-grey"
-            style="height: 28px; width: 95%"
-          ></div>
+        <h3 class="ry-about-skills">My Skills</h3>
+        <p class="ry-skills">Photography</p>
+        <div class="ry-white">
+          <div class="ry-grey" style="height: 28px; width: 95%"></div>
         </div>
 
-        <p class="ry-wide">Web Design</p>
-        <div class="ry-background-white">
-          <div
-            class="ry-background-grey"
-            style="height: 28px; width: 70%"
-          ></div>
+        <p class="ry-skills">Web Design</p>
+        <div class="ry-white">
+          <div class="ry-grey" style="height: 28px; width: 70%"></div>
         </div>
 
-        <p class="ry-wide">Photoshop</p>
-        <div class="ry-background-white">
-          <div
-            class="ry-background-grey"
-            style="height: 28px; width: 60%"
-          ></div>
+        <p class="ry-skills">Photoshop</p>
+        <div class="ry-white">
+          <div class="ry-grey" style="height: 28px; width: 60%"></div>
         </div>
         <br />
 
-        <div
-          class="ry-row-full-container ry-center ry-padding-16 ry-background-light-grey ry-section"
-        >
-          <div class="ry-quarter ry-section">
-            <span class="ry-xlarge">11+</span><br />
+        <div class="ry-work-done">
+          <div class="ry-row">
+            <span class="ry-x-large">11+</span><br />
             Partners
           </div>
 
-          <div class="ry-quarter ry-section">
-            <span class="ry-xlarge">55+</span><br />
+          <div class="ry-row">
+            <span class="ry-x-large">55+</span><br />
             Projects Done
           </div>
 
-          <div class="ry-quarter ry-section">
-            <span class="ry-xlarge">89+</span><br />
+          <div class="ry-row">
+            <span class="ry-x-large">89+</span><br />
             Happy Clients
           </div>
 
-          <div class="ry-quarter ry-section">
-            <span class="ry-xlarge">150+</span><br />
+          <div class="ry-row">
+            <span class="ry-x-large">150+</span><br />
             Meetings
           </div>
         </div>
 
-        <button
-          class="ry-button ry-section ry-background-light-grey ry-padding-large"
-        >
-          <img
-            src="./my-image/download.png"
-            class="ry-download-resume-image-styling"
-          />
-          <i class="ry-download-resume">Download Resume</i>
+        <button class="ry-resume-button">
+          <img src="./my-image/download.png" class="ry-resume" />
+          <i class="ry-resume-download-alt">Download Resume</i>
         </button>
 
         <!-- 2.3 -->
         <!-- Grid for pricing tables -->
-        <h3 class="ry-padding-16 ry-text-light-grey">My Price</h3>
+        <h3 class="ry-about-my-price">My Price</h3>
 
-        <div class="ry-row-padding" style="margin: 0 -16px">
-          <div class="ry-half ry-margin-bottom">
-            <ul class="ry-ul ry-background-white ry-center ry-opacity">
-              <li class="ry-background-dark-grey ry-xlarge ry-padding-32">
-                Basic
-              </li>
-              <li class="ry-padding-16">Web Design</li>
-              <li class="ry-padding-16">Photography</li>
-              <li class="ry-padding-16">5GB Storage</li>
-              <li class="ry-padding-16">Mail Support</li>
-              <li class="ry-padding-16">
+        <div class="ry-about-grid">
+          <div class="ry-about-grid-half">
+            <ul class="ry-about-grid-ul">
+              <li class="ry-about-grid-title">Basic</li>
+              <li class="ry-about-grid-elements">Web Design</li>
+              <li class="ry-about-grid-elements">Photography</li>
+              <li class="ry-about-grid-elements">5GB Storage</li>
+              <li class="ry-about-grid-elements">Mail Support</li>
+              <li class="ry-about-grid-elements">
                 <h2>$ 10</h2>
-                <span class="ry-opacity">per month</span>
+                <span>per month</span>
               </li>
-              <li class="ry-background-light-grey ry-padding-24">
-                <button
-                  class="ry-signIn-button ry-background-white ry-padding-large"
-                >
-                  Sign Up
-                </button>
+              <li class="ry-about-grid-elements">
+                <button>Sign Up</button>
               </li>
             </ul>
           </div>
 
-          <div class="ry-half ry-margin-bottom">
-            <ul class="ry-ul ry-background-white ry-center ry-opacity">
-              <li class="ry-background-dark-grey ry-xlarge ry-padding-32">
-                Pro
-              </li>
-              <li class="ry-padding-16">Web Design</li>
-              <li class="ry-padding-16">Photography</li>
-              <li class="ry-padding-16">50GB Storage</li>
-              <li class="ry-padding-16">Endless Support</li>
-              <li class="ry-padding-16">
+          <div class="ry-about-grid-half">
+            <ul class="ry-about-grid-ul">
+              <li class="ry-about-grid-title">Pro</li>
+              <li class="ry-about-grid-elements">Web Design</li>
+              <li class="ry-about-grid-elements">Photography</li>
+              <li class="ry-about-grid-elements">50GB Storage</li>
+              <li class="ry-about-grid-elements">Endless Support</li>
+              <li class="ry-about-grid-elements">
                 <h2>$ 25</h2>
-                <span class="ry-opacity">per month</span>
+                <span>per month</span>
               </li>
-              <li class="ry-background-light-grey ry-padding-24">
-                <button
-                  class="ry-signIn-button ry-background-white ry-padding-large"
-                >
-                  Sign Up
-                </button>
+              <li class="ry-about-grid-elements">
+                <button>Sign Up</button>
               </li>
             </ul>
           </div>
         </div>
+
+        <h3>My Reputation</h3>
+        <img src="/w3images/bandmember.jpg" alt="Avatar" />
+        <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+        <p>John Doe saved us from a web disaster.</p>
+        <br />
+
+        <img src="/w3images/avatar_g2.jpg" alt="Avatar" />
+        <p><span>Rebecca Flex.</span> CEO at Company.</p>
+        <p>No one is better than John Doe.</p>
+        <!-- End About Section -->
       </div>
+
+      <!-- Portfolio Section -->
+      <div>
+        <h2>My Photos</h2>
+        <hr />
+
+        <!-- Grid for photos -->
+        <div>
+          <div>
+            <img src="/w3images/wedding.jpg" />
+            <img src="/w3images/rocks.jpg" />
+            <img src="/w3images/sailboat.jpg" />
+          </div>
+
+          <div class="w3-half">
+            <img src="/w3images/underwater.jpg" />
+            <img src="/w3images/chef.jpg" />
+            <img src="/w3images/wedding.jpg" />
+            <img src="/w3images/p6.jpg" />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Contact Section -->
+      <div>
+        <h2>Contact Me</h2>
+        <hr />
+
+        <div>
+          <p><i></i> Chicago, US</p>
+          <p><i></i> Phone: +00 151515</p>
+          <p><i> </i> Email: mail@mail.com</p>
+        </div>
+        <br />
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="/action_page.php" target="_blank">
+          <p><input type="text" placeholder="Name" required name="Name" /></p>
+          <p><input type="text" placeholder="Email" required name="Email" /></p>
+          <p>
+            <input type="text" placeholder="Subject" required name="Subject" />
+          </p>
+          <p>
+            <input type="text" placeholder="Message" required name="Message" />
+          </p>
+          <p>
+            <button type="submit"><i></i> SEND MESSAGE</button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <p>
+          Powered by
+          <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+            >w3.css</a
+          >
+        </p>
+        <!-- End footer -->
+      </footer>
     </div>
   </body>
 </html>
