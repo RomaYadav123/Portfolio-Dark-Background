@@ -12,10 +12,11 @@
       rel="stylesheet"
       href="https://fonts.google.com/specimen/Montserrat"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.com/libraries/font-awesome/4.7.0"
-    />
+
+    <script
+      src="https://kit.fontawesome.com/c87363d7ad.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -32,10 +33,10 @@
     <div class="main-container">
       <!--  child 1 (content-1) Header-->
       <header>
-        <h1 class="ry-jumbo">John Doe.</h1>
-        <p class="ry-designation">Photographer and Web Designer.</p>
+        <h1 class="ry-jumbo">Roma Yadav.</h1>
+        <p class="ry-designation">Petroleum Engineer.</p>
         <img
-          src="./my-image/man_smoke (1).jpg"
+          src="./my-image/Roma-Image_B&W.jpg"
           alt="girl"
           width="992"
           height="1108"
@@ -98,8 +99,8 @@
         </div>
 
         <button class="ry-resume-button">
-          <img src="./my-image/download.png" class="ry-resume" />
-          <i class="ry-resume-download-alt">Download Resume</i>
+          <i class="fa-solid fa-download"></i>
+          <p style="margin: 0px; margin-left: 4px">Download Resume</p>
         </button>
 
         <!-- 2.3 -->
@@ -115,11 +116,11 @@
               <li class="ry-about-grid-elements">5GB Storage</li>
               <li class="ry-about-grid-elements">Mail Support</li>
               <li class="ry-about-grid-elements">
-                <h2>$ 10</h2>
+                <h1 class="custom-heading">$ 10</h1>
                 <span>per month</span>
               </li>
               <li class="ry-about-grid-elements">
-                <button>Sign Up</button>
+                <button class="sign-up-button">Sign Up</button>
               </li>
             </ul>
           </div>
@@ -132,46 +133,68 @@
               <li class="ry-about-grid-elements">50GB Storage</li>
               <li class="ry-about-grid-elements">Endless Support</li>
               <li class="ry-about-grid-elements">
-                <h2>$ 25</h2>
+                <h1 class="custom-heading">$ 25</h1>
                 <span>per month</span>
               </li>
               <li class="ry-about-grid-elements">
-                <button>Sign Up</button>
+                <button class="sign-up-button">Sign Up</button>
               </li>
             </ul>
           </div>
         </div>
 
-        <h3>My Reputation</h3>
-        <img src="/w3images/bandmember.jpg" alt="Avatar" />
-        <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-        <p>John Doe saved us from a web disaster.</p>
-        <br />
+        <h3 class="ry-about-reputation">My Reputation</h3>
+        <div class="ry-reputation-half">
+          <img
+            src="./my-image/bandmember.jpg"
+            alt="Bandmemeber"
+            class="image-reputation"
+          />
+          <div class="ry-reputation-para">
+            <p class="para-reputation">
+              <span>Chris Fox.</span> CEO at Mighty Schools.
+            </p>
+            <p class="para-reputation">
+              John Doe saved us from a web disaster.
+            </p>
+            <br />
+          </div>
+        </div>
 
-        <img src="/w3images/avatar_g2.jpg" alt="Avatar" />
-        <p><span>Rebecca Flex.</span> CEO at Company.</p>
-        <p>No one is better than John Doe.</p>
+        <div class="ry-reputation-half">
+          <img
+            src="./my-image/avatar_g2.jpg"
+            alt="Avatar"
+            class="image-reputation"
+          />
+          <div class="ry-reputation-para">
+            <p class="para-reputation">
+              <span>Rebecca Flex.</span> CEO at Company.
+            </p>
+            <p class="para-reputation">No one is better than John Doe.</p>
+          </div>
+        </div>
         <!-- End About Section -->
       </div>
 
       <!-- Portfolio Section -->
-      <div>
-        <h2>My Photos</h2>
+      <div id="Photos" class="ry-my-photos-section">
+        <h2 class="ry-my-photos-title">My Photos</h2>
         <hr />
 
         <!-- Grid for photos -->
         <div>
           <div>
-            <img src="/w3images/wedding.jpg" />
-            <img src="/w3images/rocks.jpg" />
-            <img src="/w3images/sailboat.jpg" />
+            <img src="./my-image/wedding.jpg" class="my-photos-collection" />
+            <img src="./my-image/rocks.jpg" class="my-photos-collection" />
+            <img src="./my-image/sailboat.jpg" class="my-photos-collection" />
           </div>
 
           <div class="w3-half">
-            <img src="/w3images/underwater.jpg" />
-            <img src="/w3images/chef.jpg" />
-            <img src="/w3images/wedding.jpg" />
-            <img src="/w3images/p6.jpg" />
+            <img src="./my-image/underwater.jpg" class="my-photos-collection" />
+            <img src="./my-image/chef.jpg" class="my-photos-collection" />
+            <img src="./my-image/wedding.jpg" class="my-photos-collection" />
+            <img src="./my-image/p6.jpg" class="my-photos-collection" />
           </div>
           <!-- End photo grid -->
         </div>
@@ -179,29 +202,65 @@
       </div>
 
       <!-- Contact Section -->
-      <div>
-        <h2>Contact Me</h2>
-        <hr />
+      <div id="Contact">
+        <h2 class="ry-contact-me">Contact Me</h2>
+        <hr class="ry-horizontal-row" />
 
         <div>
-          <p><i></i> Chicago, US</p>
-          <p><i></i> Phone: +00 151515</p>
-          <p><i> </i> Email: mail@mail.com</p>
+          <p class="contact-info">
+            <i class="fa-solid fa-location-dot"></i> Chicago, US
+          </p>
+          <p class="contact-info">
+            <i class="fa-solid fa-phone"></i> Phone: +00 151515
+          </p>
+          <p class="contact-info">
+            <i class="fa-solid fa-envelope"></i> Email: mail@mail.com
+          </p>
         </div>
         <br />
-        <p>Let's get in touch. Send me a message:</p>
+        <p class="ry-last">Let's get in touch. Send me a message:</p>
 
         <form action="/action_page.php" target="_blank">
-          <p><input type="text" placeholder="Name" required name="Name" /></p>
-          <p><input type="text" placeholder="Email" required name="Email" /></p>
           <p>
-            <input type="text" placeholder="Subject" required name="Subject" />
+            <input
+              class="form-styling"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
           </p>
           <p>
-            <input type="text" placeholder="Message" required name="Message" />
+            <input
+              class="form-styling"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
           </p>
           <p>
-            <button type="submit"><i></i> SEND MESSAGE</button>
+            <input
+              class="form-styling"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="form-styling"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button class="form-styling" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE
+            </button>
           </p>
         </form>
         <!-- End Contact Section -->
@@ -215,12 +274,7 @@
         <i></i>
         <i></i>
         <i></i>
-        <p>
-          Powered by
-          <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-            >w3.css</a
-          >
-        </p>
+
         <!-- End footer -->
       </footer>
     </div>

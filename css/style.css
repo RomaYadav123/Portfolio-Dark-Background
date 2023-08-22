@@ -15,7 +15,6 @@ html {
 }
 
 .main-container {
-  border: 5px solid red;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -23,42 +22,34 @@ html {
   background-color: #000;
 }
 
-/* 1 */
+/* 2 */
 
 .header-navbar {
   position: fixed;
   top: 0;
-  /* justify-content: space-between; */
   width: 100%;
   z-index: 1;
-  /* padding: 8px 16px; */
   font-size: 12px;
+  /* font-family: Montserrat, sans-serif; */
 }
 
 .header-navbar ul {
   display: flex;
   list-style: none;
-  /* padding: 16px 0px; */
   padding: 0px;
   margin: 0px;
-  /* border: 5px solid darksalmon; */
-  /* justify-content: space-between; */
   background-color: #000;
 }
 
 .header-navbar li {
-  padding: 16px;
-  /* border: 5px solid red; */
   flex: 1;
   text-align: center;
+  padding: 8px 0px;
 }
 
 .header-navbar li a {
   flex: 1;
   text-transform: uppercase;
-  /* border: 5px solid yellow; */
-  /* margin: 0px;
-  padding: 0; */
   color: #757575;
   text-decoration: none;
 }
@@ -70,9 +61,10 @@ html {
 }
 
 .ry-jumbo {
-  font-size: 54px;
+  font-size: 64px;
   text-align: center;
   font-weight: 400;
+  /* font-family: Montserrat, sans-serif; */
 }
 
 .ry-designation {
@@ -85,12 +77,16 @@ html {
   padding: 38px;
 }
 
-/* 2 */
+/* 3 */
+#About {
+  padding: 64px 0px;
+}
 
 .ry-about-title {
   font-weight: 400;
-  font-family: sans-serif;
   color: lightgray;
+  /* font-family: Montserrat, sans-serif; */
+  font-size: 24px;
 }
 
 .ry-horizontal-row {
@@ -106,7 +102,8 @@ html {
 .ry-about-skills {
   font-weight: 400;
   color: lightgray;
-  font-family: sans-serif;
+  /* font-family: Montserrat, sans-serif; */
+  font-size: 24px;
 }
 
 .ry-skills {
@@ -143,24 +140,23 @@ html {
 
 .ry-resume-button {
   display: flex;
-  width: 60%;
   background-color: lightgray;
-  padding: 16px;
-}
-
-.ry-resume {
-  height: 10%;
-  width: 9%;
+  padding: 12px 24px;
+  margin: 16px 0px;
+  font-size: 15px;
+  /* font-family: Montserrat, sans-serif; */
+  padding: 12px 24px;
+  margin: 16px 0px;
 }
 
 .ry-about-my-price {
   font-weight: 400;
-  font-family: sans-serif;
   color: lightgray;
+  /* font-family: Montserrat, sans-serif; */
+  font-size: 24px;
 }
 
 .ry-about-grid {
-  border: 5px solid darkseagreen;
   text-align: center;
   width: 100%;
 }
@@ -168,19 +164,19 @@ html {
 .ry-about-grid-half {
   display: table;
   margin: 32px 0px 32px 0px;
-  padding: 32px 16px;
   clear: both;
-  border: 5px solid darkorange;
   width: 100%;
-  background-color: #fff;
+  background-color: lightgray;
 }
 
 .ry-about-grid-ul {
   display: list-item;
   list-style: none;
   padding: 0;
-  border: 5px solid darkcyan;
   margin: 0;
+}
+.custom-heading {
+  font-weight: normal;
 }
 
 .ry-about-grid-half li {
@@ -198,17 +194,126 @@ html {
 .ry-about-grid-title {
   background-color: #616161;
   color: lightgray;
+  /* font-family: Montserrat, sans-serif; */
   text-align: center;
   font-size: 24px;
   width: 100%;
-  border: 5px solid darkkhaki;
+  padding: 32px 16px;
 }
 
 .ry-about-grid-half:hover {
-  background-color: #fff;
-  opacity: 0.6;
+  background-color: white;
 }
 
 .ry-about-grid-elements {
   color: #000;
+  font-size: 15px;
+  /* font-family: Montserrat, sans-serif; */
+}
+
+.sign-up-button {
+  padding: 12px 24px;
+  border-style: none;
+}
+
+.ry-about-reputation {
+  font-weight: 400;
+  color: lightgray;
+  /* font-family: Montserrat, sans-serif; */
+  font-size: 24px;
+}
+
+.image-reputation {
+  height: 15%;
+  width: 25%;
+  border-radius: 50%;
+}
+
+.para-reputation {
+  /* font-family: Montserrat, sans-serif; */
+  font-size: 15px;
+  color: #757575;
+  margin: 15px 0px 15px 0px;
+  line-height: 1.5;
+}
+
+.ry-reputation-half {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ry-reputation-para {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 6px;
+}
+/* 4 */
+#Photos {
+  padding: 32px 0px;
+}
+
+.ry-my-photos-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.ry-my-photos-title {
+  font-weight: 400;
+  color: lightgray;
+  /* font-family: Montserrat, sans-serif; */
+  font-size: 24px;
+}
+
+.my-photos-collection {
+  height: 50%;
+  width: 100%;
+}
+
+/* 5 */
+
+#Contact {
+  padding: 64px 0px;
+}
+
+.ry-contact-me {
+  font-weight: 400;
+  color: #f1f1f1;
+  /* font-family: Montserrat, sans-serif; */
+  font-size: 30px;
+}
+
+.contact-info {
+  /* font-family: Montserrat, sans-serif; */
+  color: #757575;
+  font-size: 15px;
+  margin: 15px 0px;
+}
+
+.ry-last {
+  font-size: 15px;
+  color: #757575;
+  /* font-family: Montserrat, sans-serif; */
+  margin: 15px 0px 15px 0px;
+}
+
+form {
+  display: block;
+}
+
+.form-styling {
+  padding: 16px 8px;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* Tablet media query */
+
+@media only screen and (min-width: 600px) {
+}
+
+/* Website media query */
+
+@media only screen and (min-width: 768px) {
 }
