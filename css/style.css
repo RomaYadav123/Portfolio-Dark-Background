@@ -77,6 +77,14 @@ html {
   padding: 38px;
 }
 
+.hide-when-mobile-view {
+  display: none;
+}
+
+.ry-name-for-tablet {
+  display: none;
+}
+
 /* 3 */
 #About {
   padding: 64px 0px;
@@ -208,7 +216,6 @@ html {
 .ry-about-grid-elements {
   color: #000;
   font-size: 15px;
-  /* font-family: Montserrat, sans-serif; */
 }
 
 .sign-up-button {
@@ -219,18 +226,17 @@ html {
 .ry-about-reputation {
   font-weight: 400;
   color: lightgray;
-  /* font-family: Montserrat, sans-serif; */
   font-size: 24px;
 }
 
 .image-reputation {
   height: 15%;
-  width: 25%;
+  width: 18%;
   border-radius: 50%;
+  margin-bottom: 24px;
 }
 
 .para-reputation {
-  /* font-family: Montserrat, sans-serif; */
   font-size: 15px;
   color: #757575;
   margin: 15px 0px 15px 0px;
@@ -247,7 +253,7 @@ html {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 6px;
+  margin-left: 40px;
 }
 /* 4 */
 #Photos {
@@ -280,21 +286,24 @@ html {
 .ry-contact-me {
   font-weight: 400;
   color: #f1f1f1;
-  /* font-family: Montserrat, sans-serif; */
   font-size: 30px;
 }
 
 .contact-info {
-  /* font-family: Montserrat, sans-serif; */
   color: #757575;
   font-size: 15px;
   margin: 15px 0px;
 }
 
+.contact-icons-para i {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 24px;
+}
+
 .ry-last {
   font-size: 15px;
   color: #757575;
-  /* font-family: Montserrat, sans-serif; */
   margin: 15px 0px 15px 0px;
 }
 
@@ -308,12 +317,303 @@ form {
   width: 100%;
 }
 
+.ry-footer {
+  display: none;
+}
+
 /* Tablet media query */
 
 @media only screen and (min-width: 600px) {
+  /* 1 */
+
+  body {
+    margin: 0;
+  }
+
+  .header-navbar {
+    display: none;
+  }
+
+  .hide-when-mobile-view {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    font-size: 12px;
+    margin: 0px;
+    width: 120px;
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+    border: 5px solid darkorchid;
+  }
+
+  .ry-header-tablet {
+    padding: 0;
+    margin-left: 120px;
+    color: #fff;
+    background-color: #000;
+    border: 5px solid darkblue;
+    text-align: center;
+  }
+  .ry-about-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 12px;
+  }
+  .ry-image-tablet {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.6;
+  }
+
+  .ry-navbar-tablet {
+    display: flex;
+    flex: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    font-size: 12px;
+    margin: 0px;
+    color: #fff;
+    width: 120px;
+    height: 100%;
+    background-color: #222;
+  }
+
+  .ry-navbar-tablet i {
+    font-size: 42px;
+    color: #fff;
+    padding: 12px 24px;
+  }
+
+  .ry-navbar-tablet p {
+    font-size: 15px;
+    color: #fff;
+    padding: 12px 24px;
+  }
+
+  .individual-icon-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .individual-icon-tablet:hover {
+    background-color: #000;
+  }
+
+  .main-container {
+    width: 85%;
+    height: 100%;
+    color: #fff;
+    padding: 12px 24px;
+    background-color: #000;
+    margin-left: 120px;
+  }
+
+  .ry-name-for-tablet {
+    display: inline;
+    font-size: 44px;
+    margin-right: 16px;
+  }
+
+  .ry-jumbo-tablet {
+    font-size: 44px;
+    margin: 10px 0px;
+  }
+
+  .ry-photos-for-tablet {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 12px;
+  }
+
+  .ry-photos-for-tablet-half-1 {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    row-gap: 12px;
+  }
+  .my-photos-collection {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ry-photos-for-tablet-2 {
+    display: grid;
+    grid-template-rows: 2fr auto auto auto;
+    row-gap: 12px;
+  }
+
+  .ry-footer {
+    display: block;
+    color: #757575;
+    font-size: 24px;
+  }
+
+  .ry-footer i:hover {
+    cursor: pointer;
+    color: #222;
+  }
+
+  #About {
+    padding: 64px 0px;
+  }
+
+  #Photos {
+    padding: 64px 0px;
+  }
+
+  #Contact {
+    padding: 64px 0px;
+  }
+
+  .ry-work-done {
+    display: flex;
+    font-family: Montserrat sans-serif;
+    flex-direction: row;
+    background-color: lightgray;
+    text-align: center;
+    color: #000;
+    padding: 16px 0px 16px 0px;
+  }
 }
 
 /* Website media query */
 
 @media only screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .ry-website-layout {
+    display: flex;
+    background-color: black;
+  }
+
+  .main-container {
+    flex: 2;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 64px 150px;
+    background-color: #000;
+  }
+
+  .ry-about-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 12px;
+  }
+  .ry-image-tablet {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.6;
+  }
+
+  .ry-navbar-tablet {
+    display: flex;
+    flex: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    font-size: 12px;
+    margin: 0px;
+    color: #fff;
+    width: 120px;
+    height: 100%;
+    background-color: #222;
+  }
+
+  .ry-navbar-tablet i {
+    font-size: 42px;
+    color: #fff;
+    padding: 12px 24px;
+  }
+
+  .ry-navbar-tablet p {
+    font-size: 15px;
+    color: #fff;
+    padding: 12px 24px;
+  }
+
+  .individual-icon-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .individual-icon-tablet:hover {
+    background-color: #000;
+  }
+
+  .ry-name-for-tablet {
+    display: inline;
+    font-size: 44px;
+    margin-right: 16px;
+  }
+
+  .ry-jumbo-tablet {
+    font-size: 44px;
+    margin: 10px 0px;
+  }
+
+  .ry-photos-for-tablet {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 12px;
+  }
+
+  .ry-photos-for-tablet-half-1 {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    row-gap: 12px;
+  }
+  .my-photos-collection {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ry-photos-for-tablet-2 {
+    display: grid;
+    grid-template-rows: 2fr auto auto auto;
+    row-gap: 12px;
+  }
+
+  .ry-footer {
+    display: block;
+    color: #757575;
+    font-size: 24px;
+  }
+
+  .ry-footer i:hover {
+    cursor: pointer;
+    color: #222;
+  }
+
+  #About {
+    padding: 64px 0px;
+  }
+
+  #Photos {
+    padding: 64px 0px;
+  }
+
+  #Contact {
+    padding: 64px 0px;
+  }
+
+  .ry-work-done {
+    display: flex;
+    font-family: Montserrat sans-serif;
+    flex-direction: row;
+    background-color: lightgray;
+    text-align: center;
+    color: #000;
+    padding: 16px 0px 16px 0px;
+  }
 }
