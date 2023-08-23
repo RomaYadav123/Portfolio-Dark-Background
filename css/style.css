@@ -616,4 +616,12 @@ form {
     color: #000;
     padding: 16px 0px 16px 0px;
   }
+  .individual-icon-tablet {
+    border-style: none;
+  }
+  .individual-icon-tablet p {
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+  }
 }
